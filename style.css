@@ -35,3 +35,20 @@ button {
   border-radius: 5px;
   box-shadow: 2px 5px 5px #333;
 }
+
+
+.edit {
+  background-color: #5a95ff;
+}
+
+.delete {
+  background-color: #ff5c5c;
+}
+
+#pending-tasks span {
+  color: #5a95ff;
+}
+
+.completed {
+  color: #a0a0a0;
+}

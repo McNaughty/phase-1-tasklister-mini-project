@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>Flatiron Task Lister</title>
   <link rel="stylesheet" href="./style.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <div id="main-content">
@@ -12,17 +14,18 @@
     <form id="create-task-form" action="" method="POST">
       <label for="new-task-description">Task description:</label>
       <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
-      <input type="submit" value="Create New Task">
+      <input type="submit" id="submit" onclick="(event)"  value="Create New Task">
     </form>
 
     <div id="list">
       <h2>My Todos</h2>
+      <p id="pending-tasks"> You habe <span class="count-value">0</span>tasks(s) to complete.</p>
       <ul id="tasks">
       </ul>
     </div>
-
     <script src="./src/index.js"></script>
   </div>
 
 </body>
 </html>
+
